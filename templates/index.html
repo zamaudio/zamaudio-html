@@ -1,9 +1,30 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  {{ section.title }}
-</h1>
+<p class="subtitle">
+  <a href="/976"><img src="/wp-content/uploads/2020/10/zp-gh-1024x512.png" /></a>
+</p>
+
+<h2 class="subtitle">
+Record/mix/master:
+</h2>
+
+<h3 class="subtitle">
+  <a href="mailto:damien@zamaudio.com?subject=[Z] - Recording enquiry">Contact me for a quote</a>
+</h3>
+
+<h2 class="subtitle">
+All software developed here respects your freedom
+</h2>
+
+<h2 class="subtitle">
+  <a href="https://u.fsf.org/16e"><img src="https://static.fsf.org/nosvn/images/badges/fsfs_icons_beige-bg.png"></a>
+</h2>
+
+<p class="subtitle">
+  <img src="/logo.png" />
+</p>
+
 <ul>
   {% for page in section.pages %}
   <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
